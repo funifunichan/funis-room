@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>funi's room</title>
+  <link rel="stylesheet" href="css/style.css">
+
+<!-- 検索エンジンに掲載しないようお願いする -->
+<meta name="robots" content="noindex, nofollow">
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="sub-wrapper">
+
+    <!-- ヘッダー -->
+    <header class="header">
+
+     <!-- レース -->
+     <span class="header-lace"></span>
+
+     <!-- タイトル -->
+     <h1 class="header-title">funi's room</h1>
+     <p class="header-subtitle">welcome to my room!</p>
+
+    </header>
+
+     <!-- ナビ -->
+      <nav class="nav">
+        <a href="pages/home.html" target="room" class="active">home</a>
+        <a href="pages/aboutme.html" target="room">about me</a>
+        <a href="pages/commission.html" target="room">commission</a>
+        <a href="pages/gallery.html" target="room">gallery</a>
+        <a href="pages/diary.html" target="room">diary</a>
+      </nav>
+
+      <div class="subtitle">
+        <span class="subtitle-nameplate"></span>
+        <p>ふにのお部屋</p>
+      </div>
+
+      <!-- メイン -->
+       <main class="layout">
+
+        <!-- 左サイドバー -->
+         <aside class="sidebar-left">
+          <section class="icon">
+            <div class="icon-inner">
+            <img src="image/icon/icon.png" alt="アイコン">
+            <span class="icon-frame"></span>
+            </div>
+          </section>
+
+          <section class="diary">
+            <h2>diary</h2>
+
+            <div class="diary-preview">
+              <p class="diary-date">2026.10.20</p>
+              <p class="diary-text">サイトを作り始めた！</p>
+            </div>
+
+          </section>
+
+         </aside>
+
+         <!-- 切り替わるコンテンツ -->
+
+         <div class="main-frame">
+
+          <!-- 上下左右のレース -->
+           <span class="lace-line lace-top"></span>
+           <span class="lace-line lace-bottom"></span>
+           <span class="lace-line lace-left"></span>
+           <span class="lace-line lace-right"></span>
+
+           <!-- 角のレース -->
+           <span class="lace-corner corner-tl"></span>
+           <span class="lace-corner corner-tr"></span>
+           <span class="lace-corner corner-bl"></span>
+           <span class="lace-corner corner-br"></span>
+
+
+         <!-- メインコンテンツ -->
+
+          <iframe
+           class="main-content" 
+           src="pages/home.html"
+           name="room"
+           title="メインコンテンツ">
+          </iframe>
+
+        </div>
+
+
+
+        <!-- 右サイドバー -->
+         <aside class="sidebar-right">
+
+          <section class="memo">
+            <h2>memo</h2>
+            <p>有償依頼停止中</p>
+          </section>
+
+          <section class="music">
+            <h2>music</h2>
+
+            <div class="music-list">
+
+              <!-- １曲目 -->
+               <div class="music-item">
+                <a class="music-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="record">
+                  <img class="music-cover" alt="アルバムジャケット">
+                  </div>
+                </a>
+                <div class="music-info">
+                  <p class="music-title">loading...</p>
+                  <p class="music-lyrics">” Love Letter 君のために 何度も書き直す ”</p>
+                </div>
+               </div>
+
+               <!-- ２曲目 -->
+                <div class="music-item">
+                <a class="music-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="record">
+                  <img class="music-cover" alt="アルバムジャケット">
+                  </div>
+                </a>
+                <div class="music-info">
+                  <p class="music-title">loading...</p>
+                  <p class="music-lyrics">” 特別な気持ち Still can't say 気付いてよ、ねぇ ”</p>
+                </div>
+               </div>
+
+            </div>
+
+          </section>
+
+          <section class="link">
+            <h2>contact</h2>
+
+            <div class="contact-links">
+              <a href="https://mond.how/ja/frenewt3t" target="_blank" rel="noppener noreferrer">
+                <img src="image/icon/mond.png" alt="mond">
+              </a>
+            </div>
+
+          </section>
+
+         </aside>
+
+       </main>
+
+       </div>
+
+       <!-- フッター -->
+        <footer class="footer">
+          <p>© funi's Room</p>
+        </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

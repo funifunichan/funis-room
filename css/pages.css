@@ -1,0 +1,537 @@
+/* 文字 */
+@font-face {
+  font-family: text;
+  src: url("../font/x12y12pxMaruMinya.ttf");
+}
+@font-face {
+  font-family: sub;
+  src: url("../font/DotGothic16-Regular.ttf");
+}
+@font-face {
+  font-family: emoji;
+  src: url("../font/EmojiFont.ttf");
+}
+
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  color: #7A5626;
+  font-family: "text", "sub";
+}
+
+
+/* ===================================
+   home全体
+=================================== */
+
+/* emoji */
+
+.emoji {
+  font-family: "emoji";
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* homeの各コンテンツ */
+
+.home-main,
+.home-sub,
+.home-gallery {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.home-main {
+
+}
+
+.home-sub {
+}
+
+/* 見出し */
+
+.home-title {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+/* 文字の前にハート */
+.home-title::before {
+  content: "♡";
+  margin-right: 8px;
+}
+
+/* 文字の後ろにハート */
+.home-title::after {
+  content: "♡";
+  margin-left: 8px;
+}
+
+
+/* 本文 */
+
+.home-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 2;
+}
+
+
+/* 装飾 */
+
+.home-decoration {
+  min-height: 40px;
+}
+
+
+/* ギャラリー */
+
+.home-page .gallery-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 8px;
+}
+
+.home-page .gallery-list img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* about me */
+
+.about-container {
+  padding: 15px 5px;
+}
+
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.about-section {
+  background-color: transparent;
+  padding: 5px;
+}
+
+
+.about-subtitle {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.about-subtitle::before {
+  content: "♡";
+  margin-right: 8px;
+}
+.about-subtitle::after {
+  content: "♡";
+  margin-left: 8px;
+}
+
+
+/* プロフィール・好きなもの・界隈 */
+
+.profile-list,
+.like-list,
+.fandoms-list {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 8px 10px;
+  font-size: 11px;
+}
+
+.profile-list {
+  grid-template-columns: 100px minmax(0, 1fr);
+  column-gap: 20px;
+}
+
+.profile-list dt,
+.like-list dt,
+.fandoms-list dt {
+  font-weight: bold;
+}
+
+
+.profile-list dd,
+.like-list dd,
+.fandoms-list dd {
+  margin: 0;
+}
+
+.like-label,
+.fandoms-label {
+  margin-bottom: 10px;
+}
+
+
+.profile-value {
+  transform: translateY(10px);
+}
+
+
+/* 自己紹介文 */
+
+.profile-p {
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+
+/* 小見出し */
+
+.profile-label,
+.like-label,
+.fandoms-label {
+  font-size: 15px;
+}
+
+
+/* ===================================
+   Commission（有償依頼ページ）
+=================================== */
+
+/* ページ全体 */
+
+.commission-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+
+/* 各コンテンツのボックス */
+
+.commission-section {
+  background-color: transparent;
+  padding: 0;
+}
+
+
+/* メインタイトル */
+
+.commission-title {
+  margin: 20px 0 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.commission-title::before {
+  content: "J";
+  font-family: "emoji";
+  padding-right: 8px;
+    display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.commission-title::after {
+  content: "J";
+  font-family: "emoji";
+  padding-left: 8px;
+    display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+
+/* 小見出し */
+
+.commission-subtitle {
+  margin: 25px 0 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Commission：見出し前後のいちご */
+.commission-subtitle::before,
+.commission-subtitle::after {
+  content: "F";
+  font-family: "emoji";
+  
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* 左側のいちご */
+.commission-subtitle::before {
+  margin-right: 8px;
+}
+
+/* 右側のいちご */
+.commission-subtitle::after {
+  margin-left: 8px;
+}
+
+
+
+/* 料金表 */
+
+.commission-list {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px 15px;
+  font-size: 13px;
+  align-items: center;
+}
+
+
+/* 料金 */
+
+.commission-value {
+  margin: 0;
+  text-align: right;
+}
+
+
+/* 詳細一覧（NG・納期・修正） */
+
+.details-list {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
+  font-size: 12px;
+  align-items: start;
+}
+
+
+
+
+
+/* 詳細の項目名 */
+
+.details-label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.details-label::after {
+  content: "z";
+  padding-left: 3px;
+  font-family: "emoji";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -7px;
+}
+
+
+/* 詳細の説明文 */
+
+.details-value {
+  margin: 0;
+  line-height: 1.8;
+  position: relative;
+  bottom: 3px;
+}
+
+
+/* 注意事項一覧 */
+
+.attention-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* 注意事項の各項目 */
+
+.attention-list li {
+  margin-bottom: 14px;
+}
+
+
+
+/* ===================================
+   Gallery（イラスト一覧ページ）
+=================================== */
+
+/* ギャラリーページ全体 */
+
+.gallery-container {
+  padding: 15px;
+}
+
+
+/* ギャラリーのボックス */
+
+.gallery-page .gallery {
+  background-color: transparent;
+  padding: 0px;
+}
+
+
+/* イラスト一覧 */
+
+.gallery-page .gallery-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+
+/* イラスト画像 */
+
+.gallery-page .gallery-list img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+
+/* ===================================
+   Diary（日記ページ）
+=================================== */
+
+/* 日記ページ全体 */
+
+.diary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+
+/* 日記1件分のボックス */
+
+.diary-entry {
+  background-color: #fffcff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px dashed #aa885a;
+}
+
+
+/* 日付 */
+
+.diary-date {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* 日記の本文 */
+
+.diary-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+
+/* ===================================
+   スマホ用：プロフィール項目を縦並び
+=================================== */
+
+@media screen and (max-width: 600px) {
+
+  /* profile・like・fandomsの一覧 */
+  .profile-list,
+  .like-list,
+  .fandoms-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5px;
+  }
+
+  /* プロフィールだけ2列にする */
+.profile-list {
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 8px 15px;
+}
+
+/* 趣味の項目だけ縦並び */
+.profile-list dt:nth-of-type(4),
+.profile-list dd:nth-of-type(4) {
+  grid-column: 1 / -1;
+}
+
+  /* 項目名 */
+  .profile-list dt,
+  .like-list dt,
+  .fandoms-list dt {
+    margin-top: 10px;
+  }
+
+  /* 項目の内容 */
+  .profile-list dd,
+  .like-list dd,
+  .fandoms-list dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+  }
+
+  .details-list {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    text-align: center;
+  }
+
+  .details-label {
+    margin: 0;
+  }
+
+  .details-value {
+    margin: 0 0 20px;
+  }
+
+  
+/* Gallery：スマホ表示 */
+
+/* 画像一覧を縦1列にする */
+.gallery-page .gallery-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+/* 画像を横幅いっぱいにする */
+.gallery-page .gallery-list img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+
+
+}
